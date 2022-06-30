@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{mmynayak-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mrunmayee}{Nayak}{ \urlstyle{same}\href{https://www.linkedin.com/in/mmnayak/}{mmynayak@linkedin.com}\\
+\href{address:Bhubaneswar,India}{Bhubaneswar,India}| 884.789.4773 | \href{mailto:mmynayak@gmail.com}{mmynayak@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{KIIT university | India}
+\location{Master in Computer Application}
+\descript{2021-current | CGPA : 8.24}
+\sectionsep
+
+\subsection{Shailabala college}
+\descript{BSc in Computer Science}
+\location{Aug 2021 | Cuttack}
+\location{ Cum. GPA: 6.84 / 10.0 \\
+Major GPA: 7.07 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Masters}
+Programming and Data structures \\
+Operating System \\
+Database Management System \\
+Discrete Mathematics \\
+Cloud Computing \\
+Computer Networks \\
+Object-oriented programming \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+\location{Languages:-}
+\textbullet{} Advance:- Java \\  \textbullet{} Intermediate:- Python \\ \textbullet{} Novice:- Javascript, C  \\
+\sectionsep
+\location{Tools and IDEs :-}
+\textbullet{} Visual Studio \textbullet{} Oracle Database with 10g expression \textbullet{} Linux \textbullet{} Windows \textbullet{} Git \\
+\sectionsep
+\location{Technologies :-}
+\textbullet{} CSS \textbullet{} HTML5 \textbullet{} MySql \\
+\sectionsep
+\subsection{Soft Skills}
+\textbullet{} Time-Management \textbullet{} Problem-solving \textbullet{}Public speaking  \textbullet{}Versatile \textbullet{}Teamwork \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Language
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+\location{Advance:- English, Hindi, Bengali}
+\location{Intermediate:- Korean}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\location{Space Exploration}
+\location{Revolutionize search}
+\location{Writing articles/journals}
+\location{Photography}
+\location{Learning Multiple Languages}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Resume Objective
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbullet\location{Strong in design and integration with intuitive problem-solving skills.}
+\textbullet\location{Proficient in JAVA, PYTHON, JAVASCRIPT, and MySQL.}
+\textbullet\location{Looking to start the career as an entry-level software developer with a reputed firm driven by technology.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project}
+\runsubsection{E-LIBRARY}
+\descript{| Frontend/Backend }
+\location{12/2019 - 04/2020 | Shailabala women's college, Cuttack}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed, designed, deployed and maintained a
+network of federated sources that store electronic
+documents of various kinds.
+\item This digital library acts as a mediator and access to all
+shareable documents by library users and handle
+information at a massive scale. 
+\item Tools/Technology used- \location {HTML,bootstrap,java
+script,Visual studio code}
+\item \location{ \href{https://in.docworkspace.com/d/sIPzuzcqWAeGC2Y8G}{E-LIBRARY - Project Report}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CORPORATE MAILING SYSTEM}
+\descript{| Frontend }
+\location{06/2021 - 11/2021 | Shailabala women's college,Cuttack}
+\begin{tightemize}
+\item Designed and developed a large scale system design of
+mailing service that lets you compose mail and send it
+to a respective selected object.
+\item A corporate mailing system can help process physical
+mail, manage e-mail, and even archive the data.
+\item Technology used - \location {HTML,CSS,JAVASCRIPT,MYSQL}
+\item \location{ \href{https://in.docworkspace.com/d/sIKHuzcqWAf6GyY8G}{CORPORATE MAILING SYSTEM - Project Report}}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Frontend/Backend Developer}
+\descript{| Freelance}
+\location{DEC 2021 – current | REMOTE}
+\begin{tightemize}
+ \item Built flexible code, Application Programming and
+libraries for future use.
+\item Managed Web Applications and efficient SQL queries
+and data transport.
+\item Developed server-side logic in Python and JavaScript
+Programming language.
+\end{tightemize}
+\sectionsep
+\runsubsection{Content Editor}
+\descript{| Koo App }
+\location{FEB 2022 – APR 2022 |  Bhubaneswar}
+\begin{tightemize}
+ \item Created content marketing campaigns to drive leads
+and subscribers Use SEO best practices to generate
+traffic to the site securely.
+\item  Regularly produced various content types by
+Information retrieval, including email, social media
+posts, and blogs. Managed over 200 profiles per day.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievement} 
+\location{Certification}
+\begin{tightemize}
+\item Getting Started with AWS Machine Learning (Coursera) -
+Amazon Web Services | MAR-2022 |
+\location{ \href{https://www.coursera.org/account/accomplishments/certificate/XTQJCXPTNVFC}{AWS Training and Certification}}
+\item Google Cloud Fundamentals for AWS Professionals
+(Coursera) - Google | APR-2022 |
+\location{ \href{https://www.coursera.org/account/accomplishments/certificate/UKVYQ6CVDPSA}{Google cloud Training and Certification}}
+\item Problem Solving Using Computational Thinking
+(Coursera) - University of Michigan | MAR-2022 |
+\location{ \href{https://www.coursera.org/account/accomplishments/certificate/CDE2UH7YTPR2}{problem-solving training and Certification}}
+
+\end{tightemize}
+\sectionsep
+
+\location{Academic}
+\begin{tightemize}
+\item Secured 1st position in BSc 5th semester for
+presenting a seminar on IPAD.
+\item 2nd in school in class XII examination 67.8 %
+\item 1st in school in class X examination 82.7 %
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
